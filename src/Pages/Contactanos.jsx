@@ -151,6 +151,22 @@ margin-bottom: 10px;
   }
 
 }
+@media screen and (max-width:697px){
+  .InfoContactanos{
+    h1{
+      font-size: 20px;
+    }
+    h3{
+      font-size: 18px;
+    }
+    span{
+      font-size: 15px;
+    }
+  }
+  .Formulariowhatsapp{
+    width: 100%;
+  }
+}
 
 `;
 export default Contactanos;
