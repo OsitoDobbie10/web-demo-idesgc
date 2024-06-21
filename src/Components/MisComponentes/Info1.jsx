@@ -18,10 +18,10 @@ const Info1 = () => {
     }};
   const Variantes2 = {
       offscreen: {
-        x: -200
+        y: 300
       },
       onscreen: {
-        x: 5,
+        y: 5,
         transition: {
           type: "spring",
           bounce: 0.5,
@@ -136,6 +136,33 @@ color:white;
           text-align: justify;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width:697px){
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  justify-content: center;
+  .ImagLeftInfo1{
+    width: 100%;
+    height: 300px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .InfoRigthInfo1{
+    width: 100%;
+    height: 300px;
+    .TitileInfoRigthInfo1{
+      text-align:center;
+    }
+    .referencias{
+      text-align: center;
     }
   }
 }

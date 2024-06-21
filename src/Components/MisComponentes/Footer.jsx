@@ -135,5 +135,39 @@ background-color: #3c3f45;
     }
 
 }
+@media screen and (max-width:697px){
+width: 100%;
+display: flex;
+flex-direction:column;
+align-items: center;
+margin-top: 300px;
+.FooterInfo{
+   .footerTitle{
+    text-align: center;
+   }
+   .footerSubTitle{
+    text-align: center;
+   }
+   .contenidoFooter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   .IzquierdaContenidoFooter{
+    width: 100%;
+    height: 200px;
+   }
+   .ContactanosFooter{
+    width: 100%;
+    height: 200px;
+   }
+   }
+   .FooterC{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    text-align: center;
+   }
+}
+}
 `;
 export default Footer;
