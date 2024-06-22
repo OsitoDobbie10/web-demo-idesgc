@@ -119,6 +119,40 @@ flex-direction: column;
   }
 
 }
+@media screen and (max-width:697px){
+width: 100%;
+.primeraParte{
+ display: flex;
+ margin-top:100px;
+ position: relative;
+ left: 20px;
+ z-index: -10;
+ .InicioPerfil{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3{
+    text-align: center;
+  }
+  span{
+    text-align: center;
+    font-size: 20px;
+  }
+ }
+ .iconos{
+  display: none;
+ }
+}
+.Accesos{
+ width: 100%;
+ .ContenidoAccesos{
+  display: flex;
+  flex-direction: column;
+  justify-content:center
+ }
 
+}
+
+}
 `;
 export default Perfil

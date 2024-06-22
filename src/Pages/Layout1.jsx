@@ -1,6 +1,6 @@
 import {Outlet,useLocation} from 'react-router-dom'
 import {styled}  from "styled-components"
-import {UseGlobal,HeaderMobile,HeaderWindow} from "../index"
+import {UseGlobal,HeaderMobile,HeaderWindow,rutas} from "../index"
 const Layout = () => {
   const {mobile,openHeader,ChangeHeader,closeHeader} = UseGlobal();
   const location = useLocation();
@@ -8,7 +8,7 @@ const Layout = () => {
     <Container>
     {
       mobile === true && openHeader === false ?
-     <HeaderMobile/>
+     <HeaderMobile rutas={rutas}/>
       :
       <HeaderWindow/>
     }

@@ -33,7 +33,7 @@ transition: 0.3s ease-in-out;
         left: 20px;
     }
 @media ${Device.tablet}{
-    grid-template-columns: 75px 1fr;
+    grid-template-columns: 205px 1fr;
     &.active{
         grid-template-columns: 230px 1fr;
     }
@@ -42,8 +42,22 @@ transition: 0.3s ease-in-out;
     }
     .menuhambur{
         display: none;
+    } 
+}
+@media screen and (max-width:697px){
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .contentsidebar{
+        display: none;
     }
-   
+    .menuhambur{
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+
 }
 `
 const ContainerBody = styled.div`

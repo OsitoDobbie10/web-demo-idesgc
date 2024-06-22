@@ -1,7 +1,7 @@
-import {LinksDevice,rutas} from "../../index";
+import {LinksDevice} from "../../index";
 //import IMGSIG from "../../Assets/IDE SGC.png";
 import "./HeaderMobile.css";
-const HeaderMobile = () => {
+const HeaderMobile = ({rutas}) => {
   return (
   <>
   <div className="collapse" id="navbarToggleExternalContent">

@@ -4,10 +4,13 @@ const LinksDevice = ({rutas}) => {
     //'/','/Contactanos','/SobreNosotros','/Registro'
   return (
     <Container>
-    <NavLink className="LinkWindowItem1" to="/">Inicio</NavLink>
-    <NavLink className="LinkWindowItem1" to="/Contactanos">Contactanos</NavLink>
-    <NavLink className="LinkWindowItem1" to="/SobreNosotros">SobreNosotros</NavLink>
-    <NavLink className="LinkWindowItem1" to="/Ingresar">Registro</NavLink>
+    {
+      rutas.map((data)=>{
+        return  <NavLink className="LinkWindowItem1" to={data.ruta} key={data.id}>
+                 {data.tile}
+                </NavLink>
+      })
+    }
     </Container>
   )
 }

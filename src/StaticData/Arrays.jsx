@@ -40,7 +40,7 @@ export const rutas = [
     {
     id:2,
     tile:"Contactanos",
-    ruta:'/Sobre' 
+    ruta:'/Contactanos' 
     },
     {
     id:3,
@@ -50,8 +50,31 @@ export const rutas = [
     {
     id:4,
     tile:"Registro",
-    ruta:'/Registro'   
+    ruta:'/Ingresar'   
     }
+];
+
+export const rutas2 = [
+  {
+    id:1,
+    tile:"Perfil",
+    ruta:'/Perfil'
+  },
+  {
+    id:2,
+    tile:"Dashboard",
+    ruta:'/Dashboard'
+  },
+  {
+    id:3,
+    tile:"configurar",
+    ruta:'/configurar'
+  },
+  {
+    id:4,
+    title:"CerrarSesion",
+    ruta:'CerrarSesion'
+  }
 ];
 
 export const Referencias = [
